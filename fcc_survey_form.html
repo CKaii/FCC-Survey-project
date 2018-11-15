@@ -14,8 +14,8 @@
 </head>
 
 <body>
-  <div class="container text-centered">
-    <h1>Survey Form</h1>
+  <div class="container">
+    <h1 class="text-center display-4 mb-5">Survey Form</h1>
     <p>Let us know how we can improve freeCodeCamp</p>
     <form>
       <div class="form-group">
@@ -30,17 +30,81 @@
           <label for="age">Age</label>
           <input type="age" id="age" class="form-control" placeholder="Age">
       </div>
+
+      <div class="form-group">
+          <label for="select">Which option best describes your current role?</label>
+          <select id="selectOccupation" class="form-control">
+              <option>Student</option>
+              <option>Full Time Job</option>
+              <option>Full Time Learner</option>
+              <option>Prefer not to say</option>
+              <option>Other</option>
+          </select>
+      </div>
+
+      <label for="recommendation">How likely is that you would recommend freeCodeCamp to a friend?</label>
+      <div class="custom-control custom-radio">
+        <input type="radio" id="option1" name="recommend1" class="custom-control-input">
+        <label class="custom-control-label" for="option1">Definitely</label>
+      </div>
+      <div class="custom-control custom-radio">
+        <input type="radio" id="option2" name="recommend2" class="custom-control-input">
+        <label class="custom-control-label" for="option2">Maybe</label>
+      </div>
+      <div class="custom-control custom-radio mb-3">
+        <input type="radio" id="option3" name="recommend3" class="custom-control-input">
+        <label class="custom-control-label" for="option3">Not sure</label>
+      </div>
+
+      <div class="form-group">
+          <label for="select">What do you like most in FCC:</label>
+          <select id="selectQuality" class="form-control">
+              <option>Select an option</option>
+              <option>Challenges</option>
+              <option>Projects</option>
+              <option>Community</option>
+              <option>Open Source</option>
+          </select>
+      </div>
+
+      <div class="my-3">
+        <label for="futureimprovement">Things that should be improved in the future (Check all that apply):</label>
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="frontend">
+          <label class="custom-control-label" for="frontend">Front-end Projects</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="backend">
+          <label class="custom-control-label" for="backend">Back-end Projects</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="data">
+          <label class="custom-control-label" for="data">Data Visualization</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="challenges">
+          <label class="custom-control-label" for="challenges">Challenges</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="opensource">
+          <label class="custom-control-label" for="opensource">Open Source Community</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="helprooms">
+          <label class="custom-control-label" for="helprooms">Gitter help rooms</label>
+        </div>
+      </div>
+
+      <div class="form-group mb-3">
+        <label for="specialnotes">Any comments or suggestions?</label>
+        <textarea class="form-control" id="specialnotes" rows="4"></textarea>
+      </div>
+
+      <div class="text-center">
+          <button class="btn bg-primary text-white btn-lg mb-3">Submit</button>
+      </div>
+
     </form>
-  </div>
-  <div class="form-group">
-      <label for="select">Which option best describes your current role?</label>
-      <select id="select" class="form-control">
-          <option>Student</option>
-          <option>Full Time Job</option>
-          <option>Full Time Learner</option>
-          <option>Prefer not to say</option>
-          <option>Other</option>
-      </select>
   </div>
 
 
